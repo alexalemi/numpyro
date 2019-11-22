@@ -1,8 +1,8 @@
 import math
 
 from jax import ops
+from jax.dtypes import canonicalize_dtype
 from jax.flatten_util import ravel_pytree
-from jax.lib.xla_bridge import canonicalize_dtype
 from jax.nn import softplus
 import jax.numpy as np
 from jax.scipy.linalg import solve_triangular
